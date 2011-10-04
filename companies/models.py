@@ -1,14 +1,13 @@
-#-*- coding: utf8 -*-
-
+from django.utils.translation import ugettext_lazy as _
 from django.db import models
 
 class Company(models.Model):
-    name = models.CharField(u"Nazwa", max_length=100)
-    quotation = models.FloatField(u"Notowanie")
+    name = models.CharField(_(u"Name"), max_length=100)
+    quotation = models.FloatField(_(u"Quotation"))
 
     def __unicode__(self):
         return self.name
 
     class Meta:
-        verbose_name = u"Przediębiorstwo"
-        verbose_name_plural = u"Przedsiębiorstwa"
+        verbose_name = _(u"Company")
+        verbose_name_plural = _(u"Companies")

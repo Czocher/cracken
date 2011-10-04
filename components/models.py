@@ -1,41 +1,40 @@
-#-*- coding: utf8 -*-
-
+from django.utils.translation import ugettext_lazy as _
 from django.db import models
 
 
 class Component(models.Model):
-    name = models.CharField(u"Nazwa", max_length=50)
-    price = models.FloatField(u"Cena")
+    name = models.CharField(_(u"Name"), max_length=50)
+    price = models.FloatField(_(u"Price"))
 
     def __unicode__(self):
         return self.name
 
     class Meta:
         abstract = True
-        verbose_name = u"Komponent"
-        verbose_name_plural = u"Komponenty"
+        verbose_name = _(u"Component")
+        verbose_name_plural = _(u"Components")
 
 
 class Processor(Component):
-    timing = models.IntegerField(u"Taktowanie")
-    cores = models.IntegerField(u"Ilość rdzeni")
+    timing = models.IntegerField(_(u"Timing"))
+    cores = models.IntegerField(_(u"Number of cores"))
 
     class Meta:
-        verbose_name = u"Procesor"
-        verbose_name_plural = u"Procesory"
+        verbose_name = _(u"Processor")
+        verbose_name_plural = _(u"Processors")
 
 
 class Memory(Component):
-    amount = models.IntegerField(u"Ilość Megabajtów")
+    size = models.IntegerField(_(u"Size"))
 
     class Meta:
-        verbose_name = u"Pamięć"
-        verbose_name_plural = u"Pamięci"
+        verbose_name = _(u"Memory")
+        verbose_name_plural = _(u"Memories")
 
 
 class NetworkCard(Component):
-    speed = models.IntegerField(u"Szybkość")
+    speed = models.IntegerField(_(u"Speed"))
 
     class Meta:
-        verbose_name = u"Karta sieciowa"
-        verbose_name_plural = u"Karty sieciowe"
+        verbose_name = _(u"Network card")
+        verbose_name_plural = _(u"Network cards")
