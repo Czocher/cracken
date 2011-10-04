@@ -18,6 +18,7 @@ class Component(models.Model):
 
 class Processor(Component):
     timing = models.IntegerField(u"Taktowanie")
+    cores = models.IntegerField(u"Ilość rdzeni")
 
     class Meta:
         verbose_name = u"Procesor"

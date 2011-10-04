@@ -5,7 +5,7 @@ from django.contrib import admin
 
 
 class ProcessorAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price', 'timing')
+    list_display = ('name', 'price', 'timing', 'cores')
 
 
 class MemoryAdmin(admin.ModelAdmin):
