@@ -1,5 +1,3 @@
-#-*- coding: utf8 -*-
-
 from components.models import *
 from django.contrib import admin
 
@@ -9,7 +7,7 @@ class ProcessorAdmin(admin.ModelAdmin):
 
 
 class MemoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price', 'amount')
+    list_display = ('name', 'price', 'size')
 
 
 class NetworkCardAdmin(admin.ModelAdmin):

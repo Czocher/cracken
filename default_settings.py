@@ -99,11 +99,12 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
 )
 
 ROOT_URLCONF = 'cracken.urls'
@@ -131,6 +132,12 @@ INSTALLED_APPS = (
     'components',
     'computers',
     'companies',
+)
+
+# Avalible page translations
+LANGUAGES = (
+  ('pl', u"Polish"),
+  ('en', u"English"),
 )
 
 # A sample logging configuration. The only tangible logging

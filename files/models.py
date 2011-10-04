@@ -1,11 +1,11 @@
-#-*- coding: utf8 -*-
-
+from django.utils.translation import ugettext_lazy as _
 from django.db import models
 
+
 class File(models.Model):
-    path = models.CharField(u"Ścieżka", max_length=255, unique=True)
-    content = models.TextField(u"Zawartość")
-    binary = models.BooleanField(u"Binarny", default=False)
+    path = models.CharField(_(u"Path"), max_length=255, unique=True)
+    content = models.TextField(_(u"Content"))
+    binary = models.BooleanField(_(u"Binary"), default=False)
 
     def name(self):
         return path.split('/')[-1]
@@ -14,5 +14,5 @@ class File(models.Model):
         return self.name(self)
 
     class Meta:
-        verbose_name = u"Plik"
-        verbose_name_plural = u"Pliki"
+        verbose_name = _(u"File")
+        verbose_name_plural = _(u"Files")

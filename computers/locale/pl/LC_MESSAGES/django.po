@@ -1,0 +1,58 @@
+# Copyright (C) Paweł (Czocher) Czochański
+# This file is distributed under the same license as the cracken package.
+# Paweł (Czocher) Czochański <czochanski@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-04 21:34+0200\n"
+"PO-Revision-Date: 2011-10-04 21:34+0200\n"
+"Last-Translator: Paweł (Czocher) Czochański <czochanski@gmail.com>\n"
+"Language-Team: Polish <>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2)\n"
+
+#: models.py:11
+msgid "IP Address"
+msgstr "Adres IP"
+
+#: models.py:12
+msgid "Files"
+msgstr "Pliki"
+
+#: models.py:13
+msgid "Programs"
+msgstr "Programy"
+
+#: models.py:20
+msgid "Computer"
+msgstr "Komputer"
+
+#: models.py:21
+msgid "Computers"
+msgstr "Komputery"
+
+#: models.py:25
+msgid "Processor"
+msgstr "Procesor"
+
+#: models.py:26
+msgid "Memory"
+msgstr "Pamięć"
+
+#: models.py:27
+msgid "Network Card"
+msgstr "Karta sieciowa"
+
+#: models.py:28 models.py:36
+msgid "Owner"
+msgstr "Właściciel"
+
+#: models.py:31 models.py:32
+msgid "Gateway"
+msgstr "Brama"
