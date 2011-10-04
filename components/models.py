@@ -2,9 +2,13 @@
 
 from django.db import models
 
+
 class Component(models.Model):
     name = models.CharField(u"Nazwa", max_length=50)
     price = models.FloatField(u"Cena")
+
+    def __unicode__(self):
+        return self.name
 
     class Meta:
         abstract = True
